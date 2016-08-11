@@ -2,6 +2,8 @@
   "name": "amazon-cognito-identity-js",
   "description": "Amazon Cognito Identity Provider JavaScript SDK",
   "version": "0.9.0",
+  "main": "src/index.js",
+  "jsnext:main": "src/index.es6.js",
   "author": {
     "name": "Amazon Web Services",
     "email": "aws@amazon.com",
@@ -21,7 +23,12 @@
       "url": "http://aws.amazon.com/asl"
     }
   ],
-  "keywords": ["amazon","aws","cognito","identity"],
+  "keywords": [
+    "amazon",
+    "aws",
+    "cognito",
+    "identity"
+  ],
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-jshint": "^0.10.0",
@@ -30,5 +37,8 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-jsdoc": "^0.5.7",
     "qunitjs": "^1.15.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.4.14"
   }
 }
